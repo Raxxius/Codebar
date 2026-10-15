@@ -7,6 +7,14 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [count1, setCount1] = useState(0)
+  const [color, setColor] = useState(handleClick)
+
+  const handleClick = () => { 
+    setColor('#' + Math.floor(Math.random() * 16777216)
+      .toString(16)
+      .padStart(6, '0'))
+  }
+
 
   return (
     <>
